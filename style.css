@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F0EBEA;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    width: 50vh;
+    font-size: 1.2rem;
+}
+
+h1 {
+    background-color: #14213d; 
+    color: #fff;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: -2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+form {
+    margin: 3rem 0 1rem 0;
+}
+
+form select, button, input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 1px solid grey;
+    background-color: #e9ecef;
+    font-size: 1.2rem;
+    height: 2rem;
+    padding-left: 0.7rem;
+    width: 97%;
+    padding-right: 8px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.select-container img {
+    max-width: 2.6rem;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+}
+
+.select-container select {
+    font-size: 1.4rem;
+    width: auto; 
+}
+
+.result {
+    margin: 5rem 0 4rem 0;
+}
+
+.msg {
+    font-size: 1.7rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 0.5rem;
+    background-color: #e9ecef;
+}
+
+.msg:empty::before {
+    content: attr(data-placeholder);
+    color: #747474;
+}
+
+form button {
+    margin-top: 2rem;
+    height: 4rem;
+    background-color: #00D998;
+    color: #fff;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
