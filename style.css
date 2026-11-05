@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,8 @@ body {
     padding: 2rem;
     border-radius: 1rem;
     min-height: 60vh;
-    width: 50vh;
+    width: 100%;
+    max-width: 450px;
     font-size: 1.2rem;
 }
 
@@ -56,7 +58,7 @@ form input {
     font-size: 1.2rem;
     height: 2rem;
     padding-left: 0.7rem;
-    width: 97%;
+    width: 100%;
     padding-right: 8px;
 }
 
@@ -122,6 +124,70 @@ button:hover {
     transform: translateY(-2px);
 }
 
+/* Responsive design for mobile phones */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 12px 5px;
+    }
+
+    .amount input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .from, .to {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .select-container {
+        width: 100%;
+    }
+
+    .select-container select {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+    }
+
+    .dropdown i {
+        font-size: 22px;
+    }
+
+    .result {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .msg {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 20px;
+    }
+}
 
 
 
